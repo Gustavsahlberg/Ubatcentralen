@@ -19,7 +19,14 @@
 
 
 ## Tidsplan
-* tbc
+### Vecka 1 
+* Projektplanen
+
+### Vecka 2 Börjar på skal
+* Systemet ska kunna söka efter en ubåt baserat på dess serienummer
+* Hantera rörelserapporter och positionsuppdateringar samt logga potentiella kollisioner
+* Sensorfel
+* Nuke-aktivering
 
 
 
