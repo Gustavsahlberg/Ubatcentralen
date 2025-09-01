@@ -3,3 +3,7 @@ Sektioner/__pycache__/info.cpython-312.pyc
 /MovementReports
 /Secrets
 /Sensordata
+Funktioner/Movement/__pycache__/load_reports.cpython-312.pyc
+Funktioner/Movement/__pycache__/pos_decorator.cpython-312.pyc
+Funktioner/__pycache__/get_files.cpython-312.pyc
+Sektioner/__pycache__/submarine.cpython-312.pyc
