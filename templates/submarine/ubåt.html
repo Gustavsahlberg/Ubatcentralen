@@ -3,14 +3,29 @@
 {% block title %}Normal ubåt{% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
-<section id="home" class="mt-5">
-    <h1>ubåt hittad</h1>
-    <h4>ID {{ sn }}</h4>
+<div class="container mt-5 pt-5">
+    <div class="row">
+
+        <div class="col-md-8">
+            <h1>Ubåt hittad</h1>
+            <h4>ID: {{ sn }}</h4>
+        </div>
 
 
-</section>
+        <div class="col-md-4">
+            <h5>Krock-loggar</h5>
+            <div class="border p-3 bg-light">
 
+                {% for log in crash_log %}
+                    <p>
+                        <strong>Tid:</strong> {{ log.timestamp }}<br>
+                        <strong>Position:</strong> ({{ log.xy.0 }}, {{ log.xy.1 }})
+                    </p>
+                    <hr>
+                {% endfor %}
+                
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
