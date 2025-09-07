@@ -1,13 +1,13 @@
 from itertools import zip_longest
 from Funktioner.Movement.pos_decorator import posDecorator
-
+from collections import defaultdict
 
 
 logger = posDecorator()
 
 class loadReports:
     """Den här klassens syfte är att öppna och läsa alla filer på ett effektift sätt"""
-    
+
     def __init__(self,folder):
         self.files = [f.open("r", encoding="utf-8") for f in folder.iterdir()]
         self.filename = [f.name for f in folder.iterdir()]
@@ -44,3 +44,11 @@ class loadReports:
     def get_sub_sn(self):
         return self.filename
     
+    def get_crash_log(self):
+        crash_dict = defaultdict(list)
+        for data in logger.get_log():
+            time = data["timestamp"]
+            for xy, sn_list in data["positions"].items():
+                for sn in sn_list:
+                    crash_dict[sn].append({"timestamp": time, "xy": xy})
+        return dict(crash_dict)
