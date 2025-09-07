@@ -23,7 +23,7 @@ class posDecorator:
                 if len(keys) > 1:
                     dups[val] = keys
             if len(dups) > 0:
-                self.log.append((f"Timestamp:{self.time_stamp}, Position:{dups}"))
+                self.log.append({"timestamp": self.time_stamp, "positions": dups})
             return check
         return wrapper
     
