@@ -14,10 +14,11 @@ def search_resultat():
     if sn:
         sn = (f"{sn}.txt")
         if sn in subs:
+            crash_log = gather.get_log(sn)
             url = "ubåt.html"
             sn = (sn[:11])
         else:
             url = "error.html"
-        return render_template(f"submarine/{url}",result=sn, sn=sn)
+        return render_template(f"submarine/{url}",result=sn, sn=sn,crash_log=crash_log)
     
-    return render_template("submarine/search.html", result=None, sn=sn)
+    return render_template("submarine/search.html", result=None, sn=sn,crash_log=None)
