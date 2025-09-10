@@ -52,3 +52,13 @@ class loadReports:
                 for sn in sn_list:
                     crash_dict[sn].append({"timestamp": time, "xy": xy})
         return dict(crash_dict)
+    
+
+    def get_loc(self):
+        horizontal = defaultdict(list)
+        vertical = defaultdict(list)
+        log = self.pos
+        for sn, (x, y), in log.items():
+            vertical[x].append(y)
+            horizontal[y].append(x)
+        return horizontal, vertical, log
