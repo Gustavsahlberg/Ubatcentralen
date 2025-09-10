@@ -6,14 +6,35 @@
 <div class="container mt-5 pt-5">
     <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-4">
             <h1>Ubåt hittad</h1>
             <h4>ID: {{ sn }}</h4>
-            <h4>Up: {{ up }}</h4>
-            <h4>Down: {{ down }}</h4>
-            <h4>Forward: {{ forward }}</h4>
+
         </div>
-        
+        <div class="col-md-4">
+            <h1>Avfyra torped utan friendly fire</h1>
+            <h4>Up:
+            {% if up %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+            <h4>Ner:
+            {% if down %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+            <h4>Framåt:
+            {% if forward %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+        </div>
 
         <div class="col-md-4">
             <h5>Krock-loggar</h5>
