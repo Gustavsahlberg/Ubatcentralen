@@ -61,3 +61,7 @@ class loadReports:
             vertical[x].append(y)
             horizontal[y].append(x)
         return horizontal, vertical, log
+
+
+    def get_pos_log(self):
+        return self.pos
