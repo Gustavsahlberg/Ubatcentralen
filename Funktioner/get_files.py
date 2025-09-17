@@ -45,3 +45,18 @@ class gather():
                         down = False
         return up,down,forward
 
+
+
+    def min_max(self):
+        log = self.data.load.get_pos_log()
+        max_up = max(log,key=lambda name: log[name][0])
+        min_up = min(log,key=lambda name: log[name][0])
+
+        max_forward = max(log,key=lambda name: log[name][1])
+        min_forward = min(log,key=lambda name: log[name][1])
+        
+        min_max_list = []
+        for x in [max_up,min_up,max_forward,min_forward]:
+            min_max_list.append([x,log[x]])
+
+        return min_max_list
