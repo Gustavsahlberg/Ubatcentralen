@@ -2,29 +2,34 @@ from Funktioner.Movement.load_reports import loadReports
 from pathlib import Path
 
 
-folder = Path("Movementreports")
 
 
-print("Nu körs den här filen")
-load = loadReports(folder)
-load.read_files()
-
-
-crash_dict = load.get_crash_log()
+class dataLoading():
+    def __init__(self,folder_path: str):
+        folder = Path(folder_path)
+        print("Nu körs den här filen")
+        self.load = loadReports(folder)
+        self.load.read_files()
+        self.crash_dict = self.load.get_crash_log()
 
 
 class gather():
-    
-    def get_sn():
-        return set(load.get_sub_sn())
+    data = None
+    def __init__(self,folder: str = "Movementreports"):
+        if gather.data is None:
+            gather.data = dataLoading(folder)
+        self.data = gather.data
 
-    def get_log(sn):
-        if sn in crash_dict:
-            return crash_dict[sn]
+    def get_sn(self):
+        return set(self.data.load.get_sub_sn())
 
-    def get_clerance(sn):
+    def get_log(self,sn: str):
+        if sn in self.data.crash_dict:
+            return self.data.crash_dict[sn]
+
+    def get_clerance(self,sn: str):
         up, down ,forward = (True,True,True)
-        horizontal, vertical, log = load.get_loc()
+        horizontal, vertical, log = self.data.load.get_loc()
         if sn in log:
             yx = log[sn]
             if len(vertical[yx[0]]) > 1:
