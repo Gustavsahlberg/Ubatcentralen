@@ -8,7 +8,7 @@ logger = posDecorator()
 class loadReports:
     """Den här klassens syfte är att öppna och läsa alla filer på ett effektift sätt"""
 
-    def __init__(self,folder):
+    def __init__(self,folder : str):
         self.files = [f.open("r", encoding="utf-8") for f in folder.iterdir()]
         self.filename = [f.name for f in folder.iterdir()]
         self.pos = {}
@@ -17,7 +17,6 @@ class loadReports:
     @logger
     def row_iter(self,rows):
         for i, row in enumerate(rows):
-            #print(f"i = {self.filename[i]} och row = {row}")
             xy = self.pos.get(self.filename[i],[0,0])
             row = row.strip()
             if row[0] == "f":
