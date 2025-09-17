@@ -25,3 +25,11 @@ def search_resultat():
         return render_template(f"submarine/{url}",result=sn, sn=sn,crash_log=crash_log,up=up, down=down ,forward=forward)
     
     return render_template("submarine/search.html", result=None, sn=sn,crash_log=None,up=None, down=None ,forward=None)
+
+
+@submarine_bp.route("/minmax")
+def min_max():
+    min_max_list = g.min_max()
+    titles = ["Störst överst","Minst längst ner", "Längst fram", "Längst bak"]
+    ihop = zip(titles,min_max_list)
+    return render_template("submarine/min_max.html",ihop=ihop)
