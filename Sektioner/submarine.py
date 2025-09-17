@@ -4,7 +4,8 @@ from Funktioner.get_files import gather
 
 submarine_bp = Blueprint("Ubåt", __name__)
 
-subs = gather.get_sn()
+g = gather()
+subs = g.get_sn()
 
 
 @submarine_bp.route("/sök", methods=["GET"])
@@ -14,8 +15,8 @@ def search_resultat():
     if sn:
         sn = (f"{sn}.txt")
         if sn in subs:
-            crash_log = gather.get_log(sn)
-            up, down ,forward = gather.get_clerance(sn)
+            crash_log = g.get_log(sn)
+            up, down ,forward = g.get_clerance(sn)
             url = "ubåt.html"
             sn = (sn[:11])
         else:
