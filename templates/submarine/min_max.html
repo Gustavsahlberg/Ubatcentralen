@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Störst och Minst{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<section id="home" class="mt-5">
+    <h1>Min Max</h1>
+        {% for title, value in ihop %}
+          <li>{{ title }} - {{ value[0],value[1] }}</li>
+        {% endfor %}
+
+</section>
+
+{% endblock %}
