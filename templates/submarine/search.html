@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Sök Efter SN{% endblock %}
+
+{% block content %}
+<section id="home" class="container mt-5 pt-5">
+    <h2>Sök på en ubåt</h1>
+    <form>
+            <input type="text" name="q" placeholder="Ange ett serienummer" value="{{ q }}"> 
+            <button type="submit">Search</button>
+    </form>
+
+</section>
+
+
+{% endblock %}

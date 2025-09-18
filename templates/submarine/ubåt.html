@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Normal ubåt{% endblock %}
+
+{% block content %}
+<div class="container mt-5 pt-5">
+    <div class="row">
+
+        <div class="col-md-4">
+            <h1>Ubåt hittad</h1>
+            <h4>ID: {{ sn }}</h4>
+
+        </div>
+        <div class="col-md-4">
+            <h1>Avfyra torped utan friendly fire</h1>
+            <h4>Up:
+            {% if up %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+            <h4>Ner:
+            {% if down %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+            <h4>Framåt:
+            {% if forward %}
+            <button class="btn btn-success">Kan avfyras</button>
+            {% else %}
+            <button class="btn btn-danger">Kan inte</button>
+            {% endif %}
+            </h4>
+        </div>
+
+        <div class="col-md-4">
+            <h5>Krock-loggar</h5>
+            <div class="border p-3 bg-light">
+
+                {% for log in crash_log %}
+                    <p>
+                        <strong>Tid:</strong> {{ log.timestamp }}<br>
+                        <strong>Position:</strong> ({{ log.xy.0 }}, {{ log.xy.1 }})
+                    </p>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
