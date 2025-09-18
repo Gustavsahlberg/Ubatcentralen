@@ -36,7 +36,10 @@
         <li class="nav-item"><a class="nav-link" href="/">Hem</a></li>
         <li class="nav-item"><a class="nav-link" href="/sök">Serienummer</a></li>
         <li class="nav-item"><a class="nav-link" href="/sök">Rörelserapporter</a></li>
-        <li class="nav-item"><a class="nav-link" href="/sök">Sensorfel</a></li>
+        <li class="nav-item"> <li class="nav-item">
+          <a class="nav-link {% if request.endpoint == 'sensors.sensor_overview' %}active{% endif %}" 
+             href="{{ url_for('sensors.sensor_overview') }}">Sensorfel</a>
+        </li>
         <li class="nav-item"><a class="nav-link" href="/minmax">MinMaxPos</a></li>
         <li class="nav-item"><a class="nav-link" href="/sök">Nukes</a></li>
       </ul>

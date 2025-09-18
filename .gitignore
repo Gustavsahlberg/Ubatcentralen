@@ -1,8 +1,16 @@
 __pycache__/config.cpython-312.pyc
+__pycache__/config.cpython-313.pyc
 Sektioner/__pycache__/info.cpython-312.pyc
+Sektioner/__pycache__/info.cpython-313.pyc
 /MovementReports
 /Secrets
 /Sensordata
+/__pycache__
+/__pycache__
+/Funktioner/__pycache__/
+Sektioner/__pycache__/sensors.cpython-312.pyc
+/Sektioner/__pycache__/
+__pycache__/config.cpython-313.pyc
 Funktioner/Movement/__pycache__/load_reports.cpython-312.pyc
 Funktioner/Movement/__pycache__/pos_decorator.cpython-312.pyc
 Funktioner/__pycache__/get_files.cpython-312.pyc
