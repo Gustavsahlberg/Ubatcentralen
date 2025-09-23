@@ -1,0 +1,61 @@
+2025-09-08 10:39:41,191 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 10:39:41,191 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-08 10:39:41,193 - INFO -  * Restarting with stat
+2025-09-08 10:39:41,629 - WARNING -  * Debugger is active!
+2025-09-08 10:39:41,632 - INFO -  * Debugger PIN: 342-924-522
+2025-09-08 10:39:57,370 - INFO - 127.0.0.1 - - [08/Sep/2025 10:39:57] "[33mGET /sensorer HTTP/1.1[0m" 404 -
+2025-09-08 10:40:02,664 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:02] "GET / HTTP/1.1" 200 -
+2025-09-08 10:40:02,916 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-08 10:40:02,916 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:02] "GET /static/img/Logga.png HTTP/1.1" 200 -
+2025-09-08 10:40:02,952 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:02] "GET /static/img/slide1.png HTTP/1.1" 200 -
+2025-09-08 10:40:03,030 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:03] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2025-09-08 10:40:11,029 - INFO - 127.0.0.1 - - [08/Sep/2025 10:40:11] "GET /static/img/slide2.png HTTP/1.1" 200 -
+2025-09-08 10:44:30,430 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:30] "GET /static/img/slide3.png HTTP/1.1" 200 -
+2025-09-08 10:44:31,822 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:31] "GET / HTTP/1.1" 200 -
+2025-09-08 10:44:31,868 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:44:31,876 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:31] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:44:31,889 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:31] "[36mGET /static/img/slide1.png HTTP/1.1[0m" 304 -
+2025-09-08 10:44:31,904 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:31] "[36mGET /static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-08 10:44:34,190 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:34] "GET /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:44:34,242 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:44:34,269 - INFO - 127.0.0.1 - - [08/Sep/2025 10:44:34] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:48:36,907 - INFO -  * Detected change in 'c:\\Users\\fmh_2\\Desktop\\FATIMA\\teknikhögskolan\\effektiv python\\Grupparbete\\Ubatcentralen\\Sektioner\\sensors.py', reloading
+2025-09-08 10:48:37,083 - INFO -  * Restarting with stat
+2025-09-08 10:48:37,600 - WARNING -  * Debugger is active!
+2025-09-08 10:48:37,605 - INFO -  * Debugger PIN: 342-924-522
+2025-09-08 10:48:58,419 - INFO - 127.0.0.1 - - [08/Sep/2025 10:48:58] "GET /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:48:58,528 - INFO - 127.0.0.1 - - [08/Sep/2025 10:48:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:48:58,542 - INFO - 127.0.0.1 - - [08/Sep/2025 10:48:58] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:48:58,564 - INFO - 127.0.0.1 - - [08/Sep/2025 10:48:58] "[36mGET /static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-08 10:49:09,211 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:09] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:49:09,245 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:49:09,249 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:09] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:49:36,880 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:36] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:49:36,910 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:49:36,922 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:36] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:49:42,424 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:42] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:49:42,472 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:49:42,477 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:42] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:49:52,716 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:52] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:49:52,751 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:49:52,763 - INFO - 127.0.0.1 - - [08/Sep/2025 10:49:52] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:50:16,790 - INFO - 127.0.0.1 - - [08/Sep/2025 10:50:16] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:50:16,819 - INFO - 127.0.0.1 - - [08/Sep/2025 10:50:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:50:16,831 - INFO - 127.0.0.1 - - [08/Sep/2025 10:50:16] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:52:54,214 - INFO - 127.0.0.1 - - [08/Sep/2025 10:52:54] "POST /sensorfel HTTP/1.1" 200 -
+2025-09-08 10:52:54,248 - INFO - 127.0.0.1 - - [08/Sep/2025 10:52:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-08 10:52:54,269 - INFO - 127.0.0.1 - - [08/Sep/2025 10:52:54] "[36mGET /static/img/Logga.png HTTP/1.1[0m" 304 -
+2025-09-08 10:52:54,283 - INFO - 127.0.0.1 - - [08/Sep/2025 10:52:54] "[36mGET /static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-08 11:11:17,694 - INFO -  * Detected change in 'c:\\Users\\fmh_2\\Desktop\\FATIMA\\teknikhögskolan\\effektiv python\\Grupparbete\\Ubatcentralen\\Funktioner\\sensor_analysis.py', reloading
+2025-09-08 11:11:17,734 - INFO -  * Restarting with stat
+2025-09-08 11:11:18,994 - WARNING -  * Debugger is active!
+2025-09-08 11:11:18,996 - INFO -  * Debugger PIN: 342-924-522
+2025-09-08 11:11:37,537 - INFO -  * Detected change in 'c:\\Users\\fmh_2\\Desktop\\FATIMA\\teknikhögskolan\\effektiv python\\Grupparbete\\Ubatcentralen\\Sektioner\\sensors.py', reloading
+2025-09-08 11:11:37,566 - INFO -  * Restarting with stat
+2025-09-08 11:11:37,889 - WARNING -  * Debugger is active!
+2025-09-08 11:11:37,891 - INFO -  * Debugger PIN: 342-924-522
+2025-09-08 11:11:50,292 - INFO -  * Detected change in 'c:\\Users\\fmh_2\\Desktop\\FATIMA\\teknikhögskolan\\effektiv python\\Grupparbete\\Ubatcentralen\\Sektioner\\sensors.py', reloading
+2025-09-08 11:11:50,327 - INFO -  * Restarting with stat
+2025-09-08 11:11:50,701 - WARNING -  * Debugger is active!
+2025-09-08 11:11:50,705 - INFO -  * Debugger PIN: 342-924-522
