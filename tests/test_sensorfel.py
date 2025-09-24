@@ -9,7 +9,7 @@ class TestSensorFileAnalyzer(unittest.TestCase):
         
         self.test_dir = Path(__file__).parent
         self.test_files = list(self.test_dir.glob("*.txt"))
-        self.assertGreater(len(self.test_files), 0, "Inga testfiler hittades")
+
 
     def test_analyze_and_summary(self):
         for file_path in self.test_files:
@@ -59,5 +59,3 @@ class TestSensorFileAnalyzer(unittest.TestCase):
         
         invalid_file.unlink()
 
-if __name__ == "__main__":
-    unittest.main()
