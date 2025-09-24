@@ -26,3 +26,4 @@ tests/__pycache__/__init__.cpython-312.pyc
 tests/__pycache__/test_load_reports.cpython-312.pyc
 tests/__pycache__/test_decorator.cpython-312.pyc
 tests/__pycache__/test_get_files.cpython-312.pyc
+tests/__pycache__/test_sensorfel.cpython-312.pyc
