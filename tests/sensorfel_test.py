@@ -41,22 +41,22 @@ class TestSensorFileAnalyzer(unittest.TestCase):
 
     def test_invalid_lines_logged(self):
         """Testa att ogiltiga rader loggas korrekt."""
-        # Skapa en testfil med ogiltiga rader
+        
         invalid_file = self.test_dir / "invalid_test.txt"
         with invalid_file.open("w") as f:
-            f.write("11111\n")          # för kort
-            f.write("000011112222\n")   # fel tecken
-            f.write("0" * 208 + "\n")   # giltig rad
+            f.write("11111\n")          
+            f.write("000011112222\n")   
+            f.write("0" * 208 + "\n")  
 
         analyzer = SensorFileAnalyzer(invalid_file)
 
         with self.assertLogs(level='WARNING') as log:
             analyzer.analyze()
 
-        # Kontrollera att varningar finns
+       
         self.assertTrue(any("Ogiltig rad" in message for message in log.output))
 
-        # Radera testfilen
+        
         invalid_file.unlink()
 
 if __name__ == "__main__":
