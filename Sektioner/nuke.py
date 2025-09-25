@@ -17,8 +17,9 @@ def nuke():
         submarine_id = request.form.get("submarine_id")
         secret_key = request.form.get("secret_key")
         activation_code = request.form.get("activation_code")
+        user_date = request.form.get("user_date")
         
-        result = activator.activate_nuke(submarine_id, secret_key, activation_code)
+        result = activator.activate_nuke(submarine_id, secret_key, activation_code,user_date)
         
     return render_template("nuke.html", result=result)
 

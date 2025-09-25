@@ -26,7 +26,8 @@ class NukeActivator:
                     data[key.strip()] = value.strip()
         return data
 
-    def activate_nuke(self, submarine_id, user_key, user_code):
+    def activate_nuke(self, submarine_id, user_key, user_code,user_date):
+        
         """Försöker aktivera en ubåt med given input"""
         if submarine_id not in self.secret_keys or submarine_id not in self.activation_codes:
             return {"status": "error", "message": "ACCESS DENIED"}
@@ -36,7 +37,12 @@ class NukeActivator:
             return {"status": "error", "message": "ACCESS DENIED"}
 
         today = date.today().strftime("%Y-%m-%d")
-        raw = today + user_key + user_code
+
+        if user_date != today:
+            return {"status": "error", "message": "ACCESS DENIED"}
+
+        
+        raw = user_date + user_key + user_code
         hash_value = hashlib.sha256(raw.encode()).hexdigest()
 
         return {
